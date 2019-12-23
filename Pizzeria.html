@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Ejemplo nuevos controles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+
+  <script>
+    (function ($) {
+      $(function () {
+        // Plugin initialization
+        $('select').not('.disabled').formSelect();
+      });
+    })(jQuery); // end of jQuery name space
+  </script>
+
+</head>
+
+<body>
+  <div class="row">
+
+      <!--pantalla pequeña: s12 pantalla mediana: m4 grande:l3-->
+      <!--Este texto utilizará 12 columnas en una pantalla pequeña, 4 en una pantalla mediana (m4),
+        y 3 en una pantalla grande (l3)-->
+    
+    <form class="col s12">
+      <div class="input-field col s12"><!--esto es un desplegable...-->
+        <select>
+          <option value="" disabled selected>Choose your option</option>
+          <option value="1">Mediana</option>
+          <option value="2">Familiar</option>
+          
+        </select>
+        <label>Materialize Select</label> 
+      </div><!--...que llega hasta aqui dentro de un div-->
+      <div class="input-field col s6">
+        <input placeholder="1 pizza" type="text" class="text">
+        
+      </div>
+      <div class="row "></div> <!-- linea en blanco -->
+
+      <div class="col s3"><!--estos son puntitos para elegir...-->
+        <label>
+          <input name="group1" type="radio" checked />
+          <span>Red</span>
+        </label>
+      </div>
+      <div class="col s3">
+        <label>
+          <input name="group1" type="radio" />
+          <span>Yellow</span>
+        </label>
+      </div>
+      <div class="col s3">
+        <label>
+          <input class="with-gap" name="group1" type="radio" />
+          <span>Green</span>
+        </label>
+      </div>
+      <div class="col s3">
+        <label>
+          <input name="group1" type="radio" />
+          <span>Black</span>
+        </label>
+      </div><!--...que llegan hasta aqui-->
+
+      <div class="col s4"><!--esto son solo imagenes, debajo se pondran los cuadraditos a rellenar-->
+
+        <img class="responsive-img" src="Imagenes/tomate.png" width="80" height="80">
+      </div>
+      <div class="col s4">
+        <img class="responsive-img" src="Imagenes/bacon.png">
+      </div>
+      <div class="col s4">
+
+        <img class="responsive-img" src="Imagenes/aceitunas.png">
+      </div>
+      <div class="col s4">
+
+        <label>
+          <input type="checkbox" />
+          <span>Tomate</span>
+        </label>
+
+      </div>
+
+      <div class="col s4">
+
+        <label>
+          <input type="checkbox" />
+          <span>Bacon</span>
+        </label>
+
+      </div>
+      <div class="col s4">
+
+        <label>
+          <input type="checkbox" />
+          <span>Aceitunas</span>
+        </label>
+
+      </div><!--hasta aqui-->
+
+      <div class="row "></div> <!-- linea en blanco -->
+
+      <div class="col s4"><!--aqui se pone un boton para calcular el precio-->
+
+        <button class="btn waves-effect waves-light" type="submit" name="action">Calcular
+          
+        </button>
+
+      </div>
+      
+    </form>
+  </div>
+
+
+
+</body>
+
+</html>
