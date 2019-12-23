@@ -3,13 +3,14 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Ejemplo nuevos controles</title>
+  <title>Domino's pizza</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--css nuestro-->
+  <link rel="stylesheet" href="CSS/style.css">
 
-  
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
@@ -24,31 +25,46 @@
   </script>
 
 </head>
+<header>
+  <div id="cabecera">
+    <h1>Crea tu pizza</h1>
+    <p>Crea tu pizza!</p>
+    <p>Diviertete creando tu pizza perfecta, elige tu masa favorita y los ingredientes que mas te gusten. Ponle nombre a
+      tu receta y guardala para hacer tu proximo pedido mas rapido y facil.</p>
+  </div>
+</header>
 
 <body>
   <div class="row">
 
-      <!--pantalla pequeña: s12 pantalla mediana: m4 grande:l3-->
-      <!--Este texto utilizará 12 columnas en una pantalla pequeña, 4 en una pantalla mediana (m4),
+    <!--pantalla pequeña: s12 pantalla mediana: m4 grande:l3-->
+    <!--Este texto utilizará 12 columnas en una pantalla pequeña, 4 en una pantalla mediana (m4),
         y 3 en una pantalla grande (l3)-->
-    
+
     <form class="col s12">
-      <div class="input-field col s12"><!--esto es un desplegable...-->
-        <select>
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">Mediana</option>
-          <option value="2">Familiar</option>
-          
-        </select>
-        <label>Materialize Select</label> 
-      </div><!--...que llega hasta aqui dentro de un div-->
-      <div class="input-field col s6">
+      <div class="input-field col s3">
         <input placeholder="1 pizza" type="text" class="text">
-        
       </div>
+      <div class="input-field col s3">
+        <!--esto es un desplegable...-->
+        <select>
+          <option value="1">Mediana</option>
+        </select>
+        <label>Materialize Select</label>
+      </div>
+      <div class="input-field col s3">
+          <!--esto es un desplegable...-->
+          <select>
+            <option value="2">Original</option>
+          </select>
+          <label>Materialize Select</label>
+        </div>
+      <!--...que llega hasta aqui dentro de un div-->
+
       <div class="row "></div> <!-- linea en blanco -->
 
-      <div class="col s3"><!--estos son puntitos para elegir...-->
+      <div class="col s3">
+        <!--estos son puntitos para elegir...-->
         <label>
           <input name="group1" type="radio" checked />
           <span>Red</span>
@@ -71,9 +87,11 @@
           <input name="group1" type="radio" />
           <span>Black</span>
         </label>
-      </div><!--...que llegan hasta aqui-->
+      </div>
+      <!--...que llegan hasta aqui-->
 
-      <div class="col s4"><!--esto son solo imagenes, debajo se pondran los cuadraditos a rellenar-->
+      <div class="col s4">
+        <!--esto son solo imagenes, debajo se pondran los cuadraditos a rellenar-->
 
         <img class="responsive-img" src="Imagenes/tomate.png" width="80" height="80">
       </div>
@@ -108,18 +126,20 @@
           <span>Aceitunas</span>
         </label>
 
-      </div><!--hasta aqui-->
+      </div>
+      <!--hasta aqui-->
 
       <div class="row "></div> <!-- linea en blanco -->
 
-      <div class="col s4"><!--aqui se pone un boton para calcular el precio-->
+      <div class="col s4">
+        <!--aqui se pone un boton para calcular el precio-->
 
         <button class="btn waves-effect waves-light" type="submit" name="action">Calcular
-          
+
         </button>
 
       </div>
-      
+
     </form>
   </div>
 
