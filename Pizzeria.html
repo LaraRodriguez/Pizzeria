@@ -26,161 +26,336 @@
 
 </head>
 <header>
-  <div id="cabecera">
+  
     <h1>Crea tu pizza</h1>
     <p>Crea tu pizza!</p>
     <p>Diviertete creando tu pizza perfecta, elige tu masa favorita y los ingredientes que mas te gusten. Ponle nombre a
       tu receta y guardala para hacer tu proximo pedido mas rapido y facil.</p>
-  </div>
+  
 </header>
 
 <body>
-  <div class="row">
+  <div id="global">
+    <div id="central" class="row">
 
-    <!--pantalla pequeña: s12 pantalla mediana: m4 grande:l3-->
-    <!--Este texto utilizará 12 columnas en una pantalla pequeña, 4 en una pantalla mediana (m4),
+      <!--pantalla pequeña: s12 pantalla mediana: m4 grande:l3-->
+      <!--Este texto utilizará 12 columnas en una pantalla pequeña, 4 en una pantalla mediana (m4),
         y 3 en una pantalla grande (l3)-->
 
-    <form class="col s12 ">
-      <div class="input-field col s2 ">
-        <input placeholder="1 pizza" type="text" class="text">
-      </div>
-      <div class="input-field col s2">
-        <!--esto es un desplegable...-->
-        <select>
-          <option value="1">Mediana</option>
-        </select>
-        <label>Materialize Select</label>
-      </div>
-      <div class="input-field col s2">
-        <!--esto es un desplegable...-->
-        <select>
-          <option value="2">Original</option>
-        </select>
-        <label>Materialize Select</label>
-      </div>
-      <!--...que llega hasta aqui dentro de un div-->
+      <form class="col s12">
+        <legend>¿Como la quieres?</legend><br>
+        <div class="input-field col s3 ">
+          <input placeholder="1 pizza" type="text" class="text">
+        </div>
+        <div class="input-field col s3">
+          <!--esto es un desplegable...-->
+          <select>
+            <option value="1">Mediana</option>
+          </select>
+          <label>Materialize Select</label>
+        </div>
+        <div class="input-field col s3">
+          <!--esto es un desplegable...-->
+          <select>
+            <option value="2">Original</option>
+          </select>
+          <label>Materialize Select</label>
+        </div>
+        <!--...que llega hasta aqui dentro de un div-->
 
-      <div class="row "></div> <!-- linea en blanco -->
+        <div class="row "></div> <!-- linea en blanco -->
+        <legend>¿Cual es tu salsa?</legend><br>
+        <div class="col s2">
+          <!--estos son puntitos para elegir...-->
 
-      <div class="col s1">
-        <!--estos son puntitos para elegir...-->
+          <label>
+            <input name="gruposalsa" type="radio" checked />
+            <!--sin salsa-->
+            <span id="span">Sin salsa</span>
+          </label>
+        </div>
+        <!--1 columna-->
+        <div class="col s2">
+          <label>
+            <input class="with-gap" name="gruposalsa" type="radio" />
+            <!--salsa barbacoa-->
+            <span id="span">Salsa barbacoa</span>
+          </label>
+        </div>
+        <!--tres columnas-->
+        <div class="col s2">
+          <label>
+            <input name="gruposalsa" type="radio" />
+            <!--salsa de tomate-->
+            <span id="span">Salsa de tomate</span>
+          </label>
+        </div>
+        <!--cinco columnas-->
+        <div class="col s2">
+          <label>
+            <input name="gruposalsa" type="radio" />
+            <!--crema fresca-->
+            <span id="span">Crema fresca</span>
+          </label>
+        </div>
+        <!--siete columnas-->
+        <div class="col s2">
+          <label>
+            <input name="gruposalsa" type="radio" />
+            <!--crema fresca y barbacoa-->
+            <span id="span">Crema fresca y barbacoa</span>
+          </label>
+        </div>
+        <!--nueve columnas-->
+        <div class="row"></div>
+        <!--una linea blanca-->
+        <div class="col s2">
+          <label>
+            <input name="gruposalsa" type="radio" />
+            <!--salsa bourbon (0% alcohol)-->
+            <span id="span">Salsa bourbon (0% alcohol)</span>
+          </label>
+        </div>
+        <!--tres columnas abajo-->
+        <div class="col s2">
+          <label>
+            <input name="gruposalsa" type="radio" />
+            <!--salsa barbacoa texas-->
+            <span id="span">Salsa barbacoa Texas</span>
+          </label>
+        </div>
+        <!--seis columnas abajo-->
+        <div class="col s2">
+          <label>
+            <input name="gruposalsa" type="radio" />
+            <!--salsa barbacoa Kansas-->
+            <span id="span">Salsa barbacoa Kansas</span>
+          </label>
+        </div>
+        <!--nueve columnas abajo-->
+        <!--...que llegan hasta aqui-->
+        <div class="row"></div>
+        <legend>¿Cuanta mozzarella te apetece?</legend><br>
+        <!--esto se supone que es una barra de eleccion, a ver si funciona-->
+        <!--<div id="test-slider">Sin queso mozzarella</div>-->
+        <div class="row"></div>
 
-        <label>
-          <input name="gruposalsa" type="radio" checked />
-          <!--sin salsa-->
-          <span id="span">Sin salsa</span>
-        </label>
-      </div>
-      <div class="col s2">
-        <label>
-          <input class="with-gap" name="gruposalsa" type="radio" />
-          <!--salsa barbacoa-->
-          <span id="span">Salsa barbacoa</span>
-        </label>
-      </div>
-      <div class="col s2">
-        <label>
-          <input name="gruposalsa" type="radio" />
-          <!--salsa de tomate-->
-          <span id="span">Salsa de tomate</span>
-        </label>
-      </div>
-      <div class="col s2">
-        <label>
-          <input name="gruposalsa" type="radio" />
-          <!--crema fresca-->
-          <span id="span">Crema fresca</span>
-        </label>
-      </div>
-      <div class="col s2">
-        <label>
-          <input name="gruposalsa" type="radio" />
-          <!--crema fresca y barbacoa-->
-          <span id="span">Crema fresca y barbacoa</span>
-        </label>
-      </div>
-      <div class="col s3">
-        <label>
-          <input name="gruposalsa" type="radio" />
-          <!--salsa bourbon (0% alcohol)-->
-          <span id="span">Salsa bourbon (0% alcohol)</span>
-        </label>
-      </div>
-      <div class="col s3">
-        <label>
-          <input name="gruposalsa" type="radio" />
-          <!--salsa barbacoa texas-->
-          <span id="span">Salsa barbacoa Texas</span>
-        </label>
-      </div>
-      <div class="col s3">
-        <label>
-          <input name="gruposalsa" type="radio" />
-          <!--salsa barbacoa Kansas-->
-          <span id="span">Salsa barbacoa Kansas</span>
-        </label>
-      </div>
-      <!--...que llegan hasta aqui-->
+        <legend>¿Que ingredientes ponemos?</legend><br>
+        <div class="col s2">
+          <!--esto son solo imagenes, debajo se pondran los cuadraditos a rellenar-->
 
-      <div class="col s4">
-        <!--esto son solo imagenes, debajo se pondran los cuadraditos a rellenar-->
+          <img class="responsive-img" src="Imagenes/tomate.png" width="80" height="80">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/bacon.png">
+        </div>
+        <div class="col s2">
 
-        <img class="responsive-img" src="Imagenes/tomate.png" width="80" height="80">
-      </div>
-      <div class="col s4">
-        <img class="responsive-img" src="Imagenes/bacon.png">
-      </div>
-      <div class="col s4">
+          <img class="responsive-img" src="Imagenes/aceitunas.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/anchoas.png">
+        </div>
+        <div class="row"></div>
+        <div class="col s2">
 
-        <img class="responsive-img" src="Imagenes/aceitunas.png">
-      </div>
-      <div class="col s4">
+          <label>
+            <input type="checkbox" />
+            <span>Tomate</span>
+          </label>
 
-        <label>
-          <input type="checkbox" />
-          <span>Tomate</span>
-        </label>
+        </div>
 
-      </div>
+        <div class="col s2">
 
-      <div class="col s4">
+          <label>
+            <input type="checkbox" />
+            <span>Bacon</span>
+          </label>
 
-        <label>
-          <input type="checkbox" />
-          <span>Bacon</span>
-        </label>
+        </div>
+        <div class="col s2">
 
-      </div>
-      <div class="col s4">
+          <label>
+            <input type="checkbox" />
+            <span>Aceitunas</span>
+          </label>
 
-        <label>
-          <input type="checkbox" />
-          <span>Aceitunas</span>
-        </label>
+        </div>
+        <div class="col s2">
 
-      </div>
-      <!--hasta aqui-->
+          <label>
+            <input type="checkbox" />
+            <span>Anchoas</span>
+          </label>
 
-      <div class="row "></div> <!-- linea en blanco -->
+        </div>
+        <div class="row"></div>
+        <div class="col s2">
+          <!--esto son solo imagenes, debajo se pondran los cuadraditos a rellenar-->
 
-      <div class="col s4">
-        <!--aqui se pone un boton para calcular el precio-->
+          <img class="responsive-img" src="Imagenes/baconcrispy.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/cebollaCaramelizada_thumb.png">
+        </div>
+        <div class="col s2">
 
-        <button class="btn waves-effect waves-light" type="submit" name="action">Calcular
+          <img class="responsive-img" src="Imagenes/champinon.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/MeatBall_659001_0_ES.png">
+        </div>
+        <div class="row"></div>
+        <div class="col s2">
 
-        </button>
+          <label>
+            <input type="checkbox" />
+            <span>Bacon crispy</span>
+          </label>
 
-      </div>
+        </div>
+        <div class="col s2">
 
-    </form>
-  </div>
-  <aside>
-    <div id="pizzacom">
-      
+          <label>
+            <input type="checkbox" />
+            <span>Cebolla caramelizada</span>
+          </label>
+
+        </div>
+        <div class="col s2">
+
+          <label>
+            <input type="checkbox" />
+            <span>Champiñon</span>
+          </label>
+
+        </div>
+        <div class="col s2">
+
+          <label>
+            <input type="checkbox" />
+            <span>Albondigas</span>
+          </label>
+
+        </div>
+        <div class="row"></div>
+        <!--hasta aqui-->
+        <div class="col s2">
+          <!--esto son solo imagenes, debajo se pondran los cuadraditos a rellenar-->
+
+          <img class="responsive-img" src="Imagenes/baconcrispy.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/cebollaCaramelizada_thumb.png">
+        </div>
+        <div class="col s2">
+
+          <img class="responsive-img" src="Imagenes/champinon.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/MeatBall_659001_0_ES.png">
+        </div>
+        <div class="row"></div>
+        <div class="col s2">
+
+          <label>
+            <input type="checkbox" />
+            <span>Bacon crispy</span>
+          </label>
+
+        </div>
+        <div class="col s2">
+
+          <label>
+            <input type="checkbox" />
+            <span>Cebolla caramelizada</span>
+          </label>
+
+        </div>
+        <div class="col s2">
+
+          <label>
+            <input type="checkbox" />
+            <span>Champiñon</span>
+          </label>
+
+        </div>
+        <div class="col s2">
+
+          <label>
+            <input type="checkbox" />
+            <span>Albondigas</span>
+          </label>
+
+        </div>
+        <div class="row"></div>
+        <div class="col s2">
+          <!--esto son solo imagenes, debajo se pondran los cuadraditos a rellenar-->
+
+          <img class="responsive-img" src="Imagenes/baconcrispy.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/cebollaCaramelizada_thumb.png">
+        </div>
+        <div class="col s2">
+
+          <img class="responsive-img" src="Imagenes/champinon.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/MeatBall_659001_0_ES.png">
+        </div>
+        <div class="row"></div>
+        <div class="col s2">
+
+          <label>
+            <input type="checkbox" />
+            <span>Bacon crispy</span>
+          </label>
+
+        </div>
+        <div class="col s2">
+
+          <label>
+            <input type="checkbox" />
+            <span>Cebolla caramelizada</span>
+          </label>
+
+        </div>
+        <div class="col s2">
+
+          <label>
+            <input type="checkbox" />
+            <span>Champiñon</span>
+          </label>
+
+        </div>
+        <div class="col s2">
+
+          <label>
+            <input type="checkbox" />
+            <span>Albondigas</span>
+          </label>
+
+        </div>
+        <div class="row "></div> <!-- linea en blanco -->
+
+       
+
+      </form>
     </div>
-  </aside>
-
+    <aside>
+      <div id="pizzacom" class="col s6">
+        <img src="./Imagenes/masa.jpg">
+      
+      <div class="input-field inline col s6" >
+          <input id="email_inline" type="email" class="validate">
+          <label for="email_inline">Email</label>
+          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+        </div>
+      </div>
+    </aside>
+  </div>
 
 </body>
 

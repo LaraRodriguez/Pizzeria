@@ -1,9 +1,28 @@
-#cabecera{
+header{
     background-color: blue;
+    margin-top: -3%;
 }
 body{
     background-color: whitesmoke;
 }
 #span{
     font-size: 80%;
+}
+#pizzacom{
+    float: right;
+    
+}
+#central{
+    float: left;
+    margin-left: 3%;
+}
+p{
+    text-align: left;
+    margin-left: 3%;
+    margin-right: 20%;
+    color: white;
+}
+h1{
+    margin-left: 3%;
+    color: white;
 }
