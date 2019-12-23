@@ -8,7 +8,7 @@
 
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <!--css nuestro-->
+  <!--css mio-->
   <link rel="stylesheet" href="CSS/style.css">
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -41,51 +41,84 @@
     <!--Este texto utilizará 12 columnas en una pantalla pequeña, 4 en una pantalla mediana (m4),
         y 3 en una pantalla grande (l3)-->
 
-    <form class="col s12">
-      <div class="input-field col s3">
+    <form class="col s12 ">
+      <div class="input-field col s2 ">
         <input placeholder="1 pizza" type="text" class="text">
       </div>
-      <div class="input-field col s3">
+      <div class="input-field col s2">
         <!--esto es un desplegable...-->
         <select>
           <option value="1">Mediana</option>
         </select>
         <label>Materialize Select</label>
       </div>
-      <div class="input-field col s3">
-          <!--esto es un desplegable...-->
-          <select>
-            <option value="2">Original</option>
-          </select>
-          <label>Materialize Select</label>
-        </div>
+      <div class="input-field col s2">
+        <!--esto es un desplegable...-->
+        <select>
+          <option value="2">Original</option>
+        </select>
+        <label>Materialize Select</label>
+      </div>
       <!--...que llega hasta aqui dentro de un div-->
 
       <div class="row "></div> <!-- linea en blanco -->
 
-      <div class="col s3">
+      <div class="col s1">
         <!--estos son puntitos para elegir...-->
+
         <label>
-          <input name="group1" type="radio" checked />
-          <span>Red</span>
+          <input name="gruposalsa" type="radio" checked />
+          <!--sin salsa-->
+          <span id="span">Sin salsa</span>
+        </label>
+      </div>
+      <div class="col s2">
+        <label>
+          <input class="with-gap" name="gruposalsa" type="radio" />
+          <!--salsa barbacoa-->
+          <span id="span">Salsa barbacoa</span>
+        </label>
+      </div>
+      <div class="col s2">
+        <label>
+          <input name="gruposalsa" type="radio" />
+          <!--salsa de tomate-->
+          <span id="span">Salsa de tomate</span>
+        </label>
+      </div>
+      <div class="col s2">
+        <label>
+          <input name="gruposalsa" type="radio" />
+          <!--crema fresca-->
+          <span id="span">Crema fresca</span>
+        </label>
+      </div>
+      <div class="col s2">
+        <label>
+          <input name="gruposalsa" type="radio" />
+          <!--crema fresca y barbacoa-->
+          <span id="span">Crema fresca y barbacoa</span>
         </label>
       </div>
       <div class="col s3">
         <label>
-          <input name="group1" type="radio" />
-          <span>Yellow</span>
+          <input name="gruposalsa" type="radio" />
+          <!--salsa bourbon (0% alcohol)-->
+          <span id="span">Salsa bourbon (0% alcohol)</span>
         </label>
       </div>
       <div class="col s3">
         <label>
-          <input class="with-gap" name="group1" type="radio" />
-          <span>Green</span>
+          <input name="gruposalsa" type="radio" />
+          <!--salsa barbacoa texas-->
+          <span id="span">Salsa barbacoa Texas</span>
         </label>
       </div>
       <div class="col s3">
         <label>
-          <input name="group1" type="radio" />
-          <span>Black</span>
+          <input name="gruposalsa" type="radio" />
+          <!--salsa barbacoa Kansas-->
+          <span id="span">Salsa barbacoa Kansas</span>
         </label>
       </div>
       <!--...que llegan hasta aqui-->
@@ -142,7 +175,11 @@
 
     </form>
   </div>
-
+  <aside>
+    <div id="pizzacom">
+      
+    </div>
+  </aside>
 
 
 </body>
