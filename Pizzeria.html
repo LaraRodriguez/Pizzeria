@@ -26,12 +26,12 @@
 
 </head>
 <header>
-  
-    <h1>Crea tu pizza</h1>
-    <p>Crea tu pizza!</p>
-    <p>Diviertete creando tu pizza perfecta, elige tu masa favorita y los ingredientes que mas te gusten. Ponle nombre a
-      tu receta y guardala para hacer tu proximo pedido mas rapido y facil.</p>
-  
+
+  <h1>Crea tu pizza</h1>
+  <p>Crea tu pizza!</p>
+  <p>Diviertete creando tu pizza perfecta, elige tu masa favorita y los ingredientes que mas te gusten. Ponle nombre a
+    tu receta y guardala para hacer tu proximo pedido mas rapido y facil.</p>
+
 </header>
 
 <body>
@@ -138,7 +138,12 @@
         <legend>¿Cuanta mozzarella te apetece?</legend><br>
         <!--esto se supone que es una barra de eleccion, a ver si funciona-->
         <form name="ejemplo" action="13-html5-range-input.php" method="POST">
-          <div id="cantqueso"><div id="nada">Sin queso mozzarella</div><div id="poco">Queso 100%mozzarella</div><div id="mucho">Extra de queso 100%mozzarella</div><div id="muchisimo">Doble extra de queso 100%mozzarella</div></div>
+          <div id="cantqueso">
+            <div id="nada">Sin queso mozzarella</div>
+            <div id="poco">Queso 100%mozzarella</div>
+            <div id="mucho">Extra de queso 100%mozzarella</div>
+            <div id="muchisimo">Doble extra de queso 100%mozzarella</div>
+          </div>
           <input type="range" name="mozzarella" min="0" max="99" step="1" value="40">
         </form>
         <!--<div id="test-slider">Sin queso mozzarella</div>-->
@@ -344,15 +349,15 @@
         </div>
         <div class="row "></div> <!-- linea en blanco -->
 
-       
+
 
       </form>
     </div>
     <aside>
       <div id="pizzacom" class="col s6">
         <img id="pizza" src="./Imagenes/masa.jpg"><br>
-      
-      <div class="input-field inline col s6" >
+
+        <div class="input-field inline col s6">
           <input id="email_inline" type="email" class="validate">
           <label for="email_inline">Email</label>
           <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
