@@ -1,6 +1,7 @@
 header{
     background-color: blue;
     margin-top: -3%;
+    padding: 2px 2px 2px 2px;
 }
 body{
     background-color: whitesmoke;
@@ -10,11 +11,14 @@ body{
 }
 #pizzacom{
     float: right;
-    
+    height: 1260px;
+    width: 30%;
 }
 #central{
     float: left;
     margin-left: 3%;
+    
+    width: 65%;
 }
 p{
     text-align: left;
@@ -25,4 +29,29 @@ p{
 h1{
     margin-left: 3%;
     color: white;
+}
+#pizza{
+    width: 80%;
+    margin-top: 50%;
+    
+}
+#nada{
+    display: inline-block;
+    font-size: 10px;
+    
+}
+#poco{
+    display: inline-block;
+    font-size: 10px;
+    margin-left: 12%;
+}
+#mucho{
+    display: inline-block;
+    font-size: 10px;
+    margin-left: 12%;
+}
+#muchisimo{
+    display: inline-block;
+    font-size: 10px;
+    margin-left: 12%;
 }
