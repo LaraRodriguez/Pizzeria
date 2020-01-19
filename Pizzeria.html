@@ -51,6 +51,7 @@
           <!--esto es un desplegable...-->
           <select>
             <option value="1">Mediana</option>
+            <option value="1">Familiar</option>
           </select>
           <label>Materialize Select</label>
         </div>
@@ -58,6 +59,12 @@
           <!--esto es un desplegable...-->
           <select>
             <option value="2">Original</option>
+            <option value="2">Roll extra</option>
+            <option value="2">Domino's roll</option>
+            <option value="2">Cabra & roll</option>
+            <option value="2">Finissima</option>
+            <option value="2">Artisan</option>
+            <option value="2">Pan</option>
           </select>
           <label>Materialize Select</label>
         </div>
@@ -359,10 +366,15 @@
 
         <div class="input-field inline col s6">
           <input id="email_inline" type="email" class="validate">
-          <label for="email_inline">Email</label>
-          <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+          <label for="email_inline">Ponle nombre si quieres</label>
+          <span class="helper-text" data-error="wrong" data-success="right"></span>
         </div>
+        <button type="button" class="btn btn-danger" onclick="getData()">Añadir</button>
       </div>
+      <div class="output-field inline col s6">
+        <output id="email_inline" type="email" class="texto"></output>
+      </div>
+
     </aside>
   </div>
 </body>
